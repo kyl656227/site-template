@@ -65,6 +65,17 @@
   --space-16: 64px;
   --space-25: 100px;
 
+  /* 모서리 둥글기 */
+  --radius-sm: 4px;    /* input, 작은 배지 */
+  --radius-md: 8px;    /* 버튼, 팝업 박스 */
+  --radius-lg: 12px;   /* 카드, 큰 컨테이너 */
+  --radius-full: 999px; /* 알약형, 원형 아바타 */
+
+  /* 그림자 */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);   /* 살짝 뜬 느낌 (input focus 등) */
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);   /* 카드 hover */
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);   /* 팝업/모달급 */
+
   /* 레이아웃 */
   --header-height: 80px;
   --max-width: 1280px;

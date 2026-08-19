@@ -10,7 +10,8 @@ site-template/
 │   ├── reset.css        # 브라우저 기본값 초기화 (거의 안 건드림)
 │   ├── variables.css     # 색상/폰트/레이아웃 값 - 프로젝트마다 여기만 수정
 │   ├── typography.css     # 폰트 크기 위계 (메인타이틀/중간타이틀/본문 등) - 고정, 안 건드림
-│   └── main.css            # 실제 디자인 (레이아웃, 컴포넌트)
+│   ├── components.css      # 재사용 UI 부품 (버튼 등) - 고정, 안 건드림
+│   └── main.css              # 페이지 레이아웃 (섹션 구성) - 프로젝트마다 수정
 ├── js/
 │   └── main.js            # 모바일 메뉴 토글, 이벤트 팝업 로직
 └── img/                    # 로고, 배너 등 이미지 (logo.svg, popup-banner.jpg 필요)
@@ -80,3 +81,34 @@ margin/padding/gap에 임의의 숫자를 직접 쓰지 않고, 4px 배수로 �
 | `--space-25` | 100px | 섹션과 섹션 사이 큰 여백 |
 
 새 값이 필요하면 4px 배수 규칙만 지켜서 `--space-N`(N = px÷4)으로 추가하세요.
+
+## 모서리 둥글기 (border-radius)
+| 변수 | 값 | 쓰는 곳 |
+|---|---|---|
+| `--radius-sm` | 4px | input, 작은 배지 |
+| `--radius-md` | 8px | 버튼, 팝업 박스 |
+| `--radius-lg` | 12px | 카드, 큰 컨테이너 |
+| `--radius-full` | 999px | 알약형 배지, 원형 아바타 |
+
+## 그림자 (box-shadow)
+| 변수 | 쓰는 곳 |
+|---|---|
+| `--shadow-sm` | input focus 등 살짝 뜬 느낌 |
+| `--shadow-md` | 카드 hover |
+| `--shadow-lg` | 팝업/모달급 요소 |
+
+## 버튼 (components.css)
+`.btn`을 기본으로 깔고, 용도에 맞는 클래스 하나를 추가로 붙입니다.
+
+| 클래스 | 용도 | 예시 |
+|---|---|---|
+| `.btn .btn-primary` | 가장 강조할 액션 (하나만) | "지금 문의하기" |
+| `.btn .btn-outline` | 보조 액션 | "전화 문의" |
+| `.btn .btn-ghost` | 텍스트형, 덜 중요한 액션 | "자세히 보기" |
+
+```html
+<a href="#contact" class="btn btn-primary">지금 문의하기</a>
+<a href="tel:0000000000" class="btn btn-outline">전화 문의</a>
+<a href="#" class="btn btn-ghost">자세히 보기 &gt;</a>
+```
+한 화면에 `.btn-primary`는 되도록 1개만 써서 정말 강조하고 싶은 행동이 뭔지 명확하게 하세요.

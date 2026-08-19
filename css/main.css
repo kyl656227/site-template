@@ -96,6 +96,13 @@ main {
 
 #hero p {
   color: var(--grayscale07);
+  margin-bottom: var(--space-6);
+}
+
+.cta-group {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
 }
 
 /* ================= 카드 리스트 ================= */
@@ -108,14 +115,14 @@ main {
 .card {
   padding: var(--space-8);
   border: 1px solid var(--grayscale03);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   transition: var(--transition-base);
 }
 
 .card:hover {
   border-color: var(--point-color);
   background: var(--point-color-light);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-md);
 }
 
 .card h3 {
@@ -164,7 +171,8 @@ main {
 .popup-box {
   width: 320px;
   background: var(--grayscale01);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
 
