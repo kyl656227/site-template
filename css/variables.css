@@ -1,0 +1,32 @@
+/* ============================================
+   프로젝트별로 이 파일만 바꾸면 전체 톤이 바뀝니다.
+   ============================================ */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+  /* 브랜드 컬러 - 클라이언트마다 여기만 교체 */
+  --point-color: #2f6fed;
+  --point-color-dark: #1d4fb8;
+
+  /* 그레이스케일 (01=흰색 ~ 09=검정) */
+  --grayscale01: #ffffff;
+  --grayscale02: #f8f8f8;
+  --grayscale03: #eeeeee;
+  --grayscale04: #dddddd;
+  --grayscale05: #bbbbbb;
+  --grayscale06: #999999;
+  --grayscale07: #666666;
+  --grayscale08: #333333;
+  --grayscale09: #1a1a1a;
+
+  /* 폰트 */
+  --font-base: "Pretendard", -apple-system, "Malgun Gothic", sans-serif;
+
+  /* 레이아웃 */
+  --header-height: 80px;
+  --max-width: 1280px;
+  --section-padding: 100px 3%;
+
+  /* 트랜지션 */
+  --transition-base: all 0.3s ease-in-out;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사이트 제목</title>
+<meta name="description" content="사이트 설명을 여기에 작성하세요.">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+  <a href="#" id="header-logo">
+    <img src="img/logo.svg" alt="로고">
+  </a>
+
+  <nav id="gnb">
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#service">서비스</a></li>
+      <li><a href="#location">오시는 길</a></li>
+      <li><a href="#contact">문의</a></li>
+    </ul>
+  </nav>
+
+  <button id="menu-toggle" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- 모바일 전체화면 메뉴 -->
+<nav id="mobile-nav">
+  <ul>
+    <li><a href="#about">소개</a></li>
+    <li><a href="#service">서비스</a></li>
+    <li><a href="#location">오시는 길</a></li>
+    <li><a href="#contact">문의</a></li>
+  </ul>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+  <section id="hero" class="section">
+    <h1>여기에 메인 타이틀</h1>
+    <p>여기에 서브 카피를 작성하세요.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>소개</h2>
+    <p>내용을 입력하세요.</p>
+  </section>
+
+  <section id="service" class="section">
+    <h2>서비스</h2>
+    <div class="card-list">
+      <div class="card">
+        <h3>서비스 1</h3>
+        <p>설명 텍스트</p>
+      </div>
+      <div class="card">
+        <h3>서비스 2</h3>
+        <p>설명 텍스트</p>
+      </div>
+      <div class="card">
+        <h3>서비스 3</h3>
+        <p>설명 텍스트</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="section">
+    <h2>오시는 길</h2>
+    <p>주소 및 지도를 넣는 영역</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>문의</h2>
+    <p>전화번호 / 문의 폼 영역</p>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="footer">
+  <div class="footer-info">
+    <p><strong>상호명</strong> | 대표자명</p>
+    <p>사업자등록번호: 000-00-00000</p>
+    <p>주소: 주소를 입력하세요</p>
+    <p>전화: 000-0000-0000</p>
+  </div>
+  <p class="copyright">&copy; 2026 상호명. All rights reserved.</p>
+</footer>
+
+<!-- ================= 이벤트 팝업 ================= -->
+<div id="event-popup" class="popup-overlay">
+  <div class="popup-box">
+    <div class="popup-body">
+      <img src="img/popup-banner.jpg" alt="이벤트 배너">
+    </div>
+    <div class="popup-footer">
+      <label class="checkbox-container">
+        <input type="checkbox" id="popup-hide-today">
+        <span>오늘 하루 보지 않기</span>
+      </label>
+      <button id="popup-close">닫기</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
