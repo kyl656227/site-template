@@ -76,6 +76,12 @@
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);   /* 카드 hover */
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);   /* 팝업/모달급 */
 
+  /* z-index 레이어 순서 - 숫자 간격을 넉넉히 둬서 나중에 요소 추가 여유를 남김 */
+  --z-header: 100;
+  --z-mobile-nav: 200;
+  --z-popup: 300;
+  --z-toast: 400;   /* 나중에 추가될 토스트/알림 등을 위한 예약 */
+
   /* 레이아웃 */
   --header-height: 80px;
   --max-width: 1280px;

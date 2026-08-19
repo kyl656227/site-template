@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   background: var(--grayscale01);
   border-bottom: 1px solid var(--grayscale03);
-  z-index: 999;
+  z-index: var(--z-header);
 }
 
 #header-logo img {
@@ -57,7 +57,7 @@ header {
   background: var(--grayscale01);
   padding: calc(var(--header-height) + var(--space-10)) var(--space-8);
   transition: var(--transition-base);
-  z-index: 1000;
+  z-index: var(--z-mobile-nav);
 }
 
 #mobile-nav.active {
@@ -161,7 +161,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000;
+  z-index: var(--z-popup);
 }
 
 .popup-overlay.hidden {
