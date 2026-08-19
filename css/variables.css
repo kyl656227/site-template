@@ -5,8 +5,16 @@
 
 :root {
   /* 브랜드 컬러 - 클라이언트마다 여기만 교체 */
-  --point-color: #2f6fed;
-  --point-color-dark: #1d4fb8;
+  --point-color: #2f6fed;         /* 메인 포인트 (버튼, 링크, 강조) */
+  --point-color-dark: #1d4fb8;     /* hover, 진한 강조 */
+  --point-color-light: #eaf1ff;    /* 연한 배경, 배지, 살짝 강조용 */
+
+  --secondary-color: #f2a93b;      /* 보조 강조색 - 필요할 때만 사용 (이벤트 배지 등) */
+
+  /* 상태 컬러 - 폼 검증/알림 등에 사용, 보통 프로젝트마다 안 바꿈 */
+  --color-success: #2e9e44;
+  --color-error: #e0393e;
+  --color-warning: #e8a13c;
 
   /* 그레이스케일 (01=흰색 ~ 09=검정) */
   --grayscale01: #ffffff;
