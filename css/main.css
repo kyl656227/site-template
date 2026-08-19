@@ -20,7 +20,7 @@ header {
 
 #gnb ul {
   display: flex;
-  gap: 32px;
+  gap: var(--space-8);
 }
 
 #gnb a {
@@ -55,7 +55,7 @@ header {
   width: 70%;
   height: 100%;
   background: var(--grayscale01);
-  padding: calc(var(--header-height) + 40px) 30px;
+  padding: calc(var(--header-height) + var(--space-10)) var(--space-8);
   transition: var(--transition-base);
   z-index: 1000;
 }
@@ -65,7 +65,7 @@ header {
 }
 
 #mobile-nav li {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-5);
   font-size: 18px;
   font-weight: 600;
 }
@@ -82,16 +82,16 @@ main {
 }
 
 .section h2 {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-6);
 }
 
 #hero {
   text-align: center;
-  padding: 160px 3% 100px;
+  padding: 160px 3% var(--space-25);
 }
 
 #hero h1 {
-  margin-bottom: 16px;
+  margin-bottom: var(--space-4);
 }
 
 #hero p {
@@ -102,11 +102,11 @@ main {
 .card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--space-6);
 }
 
 .card {
-  padding: 32px;
+  padding: var(--space-8);
   border: 1px solid var(--grayscale03);
   border-radius: 12px;
   transition: var(--transition-base);
@@ -119,7 +119,7 @@ main {
 }
 
 .card h3 {
-  margin-bottom: 8px;
+  margin-bottom: var(--space-2);
 }
 
 .card p {
@@ -129,17 +129,17 @@ main {
 /* ================= FOOTER ================= */
 #footer {
   background: var(--grayscale02);
-  padding: 60px 3% 30px;
+  padding: var(--space-15) 3% var(--space-8);
   text-align: center;
 }
 
 .footer-info p {
   color: var(--grayscale07);
-  margin-bottom: 4px;
+  margin-bottom: var(--space-1);
 }
 
 .copyright {
-  margin-top: 20px;
+  margin-top: var(--space-5);
   color: var(--grayscale05);
 }
 
@@ -172,7 +172,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: var(--space-3) var(--space-4);
   background: var(--grayscale02);
   border-top: 1px solid var(--grayscale03);
 }
@@ -180,7 +180,7 @@ main {
 .checkbox-container {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--space-2);
   font-size: 13px;
   color: var(--grayscale07);
 }

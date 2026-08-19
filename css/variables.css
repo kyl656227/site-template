@@ -51,10 +51,24 @@
   --fw-semibold: 600;
   --fw-bold: 700;
 
+  /* 여백 간격 - 4px 배수 스케일. margin/padding/gap 값은 항상 여기서 가져다 씀 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-15: 60px;
+  --space-16: 64px;
+  --space-25: 100px;
+
   /* 레이아웃 */
   --header-height: 80px;
   --max-width: 1280px;
-  --section-padding: 100px 3%;
+  --section-padding: var(--space-25) 3%;
 
   /* 트랜지션 */
   --transition-base: all 0.3s ease-in-out;
