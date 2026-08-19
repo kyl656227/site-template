@@ -51,3 +51,34 @@
 .btn-ghost:hover {
   color: var(--point-color);
 }
+
+/* ================= 이미지 ================= */
+/* 실제 <img>에 붙여서, 비율 컨테이너 안을 항상 꽉 채우고 잘리게 함 (찌그러짐 방지) */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 이미지를 감싸는 부모에 붙여서 비율 고정 (원본 사진 크기와 무관하게 항상 같은 비율)
+   모서리를 둥글게 하고 싶으면 --radius-* 중 하나를 따로 얹어서 쓰세요 (예: 카드 안에서는 필요없고, 독립된 배너면 필요) */
+.ratio-video {
+  aspect-ratio: var(--ratio-video);
+  overflow: hidden;
+}
+
+.ratio-square {
+  aspect-ratio: var(--ratio-square);
+  overflow: hidden;
+}
+
+.ratio-landscape {
+  aspect-ratio: var(--ratio-landscape);
+  overflow: hidden;
+}
+
+.ratio-portrait {
+  aspect-ratio: var(--ratio-portrait);
+  overflow: hidden;
+}

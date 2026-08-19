@@ -76,6 +76,12 @@
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);   /* 카드 hover */
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);   /* 팝업/모달급 */
 
+  /* 이미지 비율 - 배너/썸네일 등에서 항상 이 비율만 사용 */
+  --ratio-video: 16 / 9;      /* 히어로 배너, 와이드 이미지 */
+  --ratio-square: 1 / 1;       /* 팝업 배너, 아이콘형 썸네일 */
+  --ratio-landscape: 4 / 3;    /* 일반 콘텐츠/카드 사진 */
+  --ratio-portrait: 3 / 4;     /* 세로형 인물·제품 사진 */
+
   /* z-index 레이어 순서 - 숫자 간격을 넉넉히 둬서 나중에 요소 추가 여유를 남김 */
   --z-header: 100;
   --z-mobile-nav: 200;
