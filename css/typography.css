@@ -1,0 +1,86 @@
+/* ============================================
+   타이포그래피 스케일
+   variables.css의 --fs-* 값만 참조합니다.
+   레이아웃은 프로젝트마다 바뀌어도 폰트 위계는 항상 동일합니다.
+   ============================================ */
+
+/* 기본 태그 매핑 */
+h1 {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+h2 {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+h3 {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+}
+
+p {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}
+
+/* 태그와 상관없이 필요한 곳에 직접 지정하는 유틸리티 클래스 */
+.text-display {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+.text-title {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+}
+
+.text-subtitle {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+}
+
+.text-body-lg {
+  font-size: var(--fs-body-lg);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}
+
+.text-body {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}
+
+.text-small {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}
+
+.text-caption {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}
+
+/* 모바일 축소 */
+@media (max-width: 768px) {
+  h1, .text-display {
+    font-size: var(--fs-display-mobile);
+  }
+  h2, .text-title {
+    font-size: var(--fs-title-mobile);
+  }
+  h3, .text-subtitle {
+    font-size: var(--fs-subtitle-mobile);
+  }
+}
